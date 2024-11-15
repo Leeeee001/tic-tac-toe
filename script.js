@@ -86,6 +86,12 @@ const checkWinner = () => {
     }
 };
 
+const showDraw = () => {
+    msg.innerText = "🤝 Match Draw! Try Again!";
+    msgContainer.classList.remove("hide");
+    disabledBoxes();
+    reset.disabled = true; 
+};
 
 const resetGame = () => {
     turnO = true;
@@ -95,12 +101,6 @@ const resetGame = () => {
     newGame.classList.remove("glow");
 };
 
-const showDraw = () => {
-    msg.innerText = "🤝 Match Draw! Try Again!";
-    msgContainer.classList.remove("hide");
-    disabledBoxes();
-    reset.disabled = true; 
-};
 
 newGame.addEventListener("click", resetGame);
 reset.addEventListener("click", resetGame);
