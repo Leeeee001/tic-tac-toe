@@ -23,19 +23,40 @@ body{
     gap: 20px;
 }
 
-.heading{  
+.heading {
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    font-weight: bold;
-    background: linear-gradient(to right, 
-                rgba(231, 96, 243, 0.73), 
-                rgba(255, 36, 36, 0.73));
+    background: linear-gradient(to right, rgba(231, 96, 243, 0.73), rgba(255, 36, 36, 0.73));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: inherit;
+    color: solid;
+    text-shadow: 
+        0 0 3px rgba(231, 96, 243, 0.6), 
+        0 0 6px rgba(81, 13, 87, 0.5), 
+        0 0 10px rgba(255, 36, 36, 0.4), 
+        0 0 15px rgba(146, 46, 155, 0.4);
+    animation: soft-glow 2s infinite alternate ease-in-out;
 }
+
+@keyframes soft-glow {
+    0% {
+        text-shadow: 
+            0 0 2px rgba(231, 96, 243, 0.5), 
+            0 0 4px rgba(95, 24, 128, 0.4), 
+            0 0 8px rgba(255, 36, 36, 0.3), 
+            0 0 12px rgba(231, 96, 243, 0.3);
+    }
+    100% {
+        text-shadow: 
+            0 0 5px rgba(231, 96, 243, 0.7), 
+            0 0 10px rgba(231, 96, 243, 0.6), 
+            0 0 15px rgba(255, 36, 36, 0.5), 
+            0 0 20px rgba(231, 96, 243, 0.5);
+    }
+}
+
 
 .gamebox{
     height: auto;
