@@ -27,16 +27,16 @@ body{
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    background: linear-gradient(to right, rgba(231, 96, 243, 0.73), rgba(255, 36, 36, 0.73));
+    background: linear-gradient(to middle, rgba(164, 47, 168, 0.73), rgba(240, 25, 25, 0.73));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: solid;
     text-shadow: 
-        0 0 3px rgba(231, 96, 243, 0.6), 
-        0 0 6px rgba(81, 13, 87, 0.5), 
-        0 0 10px rgba(255, 36, 36, 0.4), 
-        0 0 15px rgba(146, 46, 155, 0.4);
+        0 0 3px rgba(212, 55, 55, 0.6), 
+        0 0 6px rgba(185, 103, 192, 0.5), 
+        0 0 10px rgba(177, 54, 54, 0.4), 
+        0 0 15px rgba(127, 42, 134, 0.4);
     animation: soft-glow 2s infinite alternate ease-in-out;
 }
 
@@ -44,16 +44,16 @@ body{
     0% {
         text-shadow: 
             0 0 2px rgba(231, 96, 243, 0.5), 
-            0 0 4px rgba(95, 24, 128, 0.4), 
+            0 0 4px rgba(53, 10, 73, 0.4), 
             0 0 8px rgba(255, 36, 36, 0.3), 
             0 0 12px rgba(231, 96, 243, 0.3);
     }
     100% {
         text-shadow: 
-            0 0 5px rgba(231, 96, 243, 0.7), 
-            0 0 10px rgba(231, 96, 243, 0.6), 
-            0 0 15px rgba(255, 36, 36, 0.5), 
-            0 0 20px rgba(231, 96, 243, 0.5);
+            0 0 5px rgba(134, 3, 3, 0.7), 
+            0 0 10px rgba(196, 68, 207, 0.6), 
+            0 0 15px rgba(192, 18, 76, 0.884), 
+            0 0 20px rgba(130, 41, 138, 0.5);
     }
 }
 
